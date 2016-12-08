@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @book.contact_id %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @book.name %>
+</p>
+
+<p>
+  <strong>Correo:</strong>
+  <%= @book.email %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @book.phone %>
+</p>
+
+<div class="row">
+  <div class="col s12">
+    <%= link_to 'Show', @book, class: 'waves-effect waves-light btn', style: 'color: white' %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12">
+    <%= link_to 'Back', books_path, class: 'waves-effect waves-light btn', style: 'color: white' %>
+  </div>
+</div>
