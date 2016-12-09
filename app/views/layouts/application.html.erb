@@ -16,10 +16,10 @@
 
 
   <% if !current_contact %>
-  <%= link_to "Sign in", "/contacts/sign_in" %>
+  <%= link_to "Iniciar Sesion", "/contacts/sign_in" %>
   <% else %>
   Bienvenido <%= current_contact.email %>
-  <%= link_to destroy_contact_session_path, :method => :delete  do %>Sign out<%end%>
+  <%= link_to destroy_contact_session_path, :method => :delete  do %>Cerrar Sesion<%end%>
    <%end%>
 
   <body>
