@@ -1,7 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Agenda en Rails</h1>
-
+  <div class="parallax-container">
+   <div class="parallax"><img src="pa1.png"></div>
+    
 <table class="highlight">
   <thead>
     <tr>
@@ -13,7 +15,7 @@
     </tr>
   </thead>
 
-  <tbody>
+  <body>
     <% @books.each do |book| %>
       <tr>
         <td><%= book.contact_id %></td>
@@ -27,15 +29,15 @@
 	<a href= "/books/<%= book.id%>/edit"class="waves-effect waves-light btn">Editar</a>
 	</td>
         <td>
-	<a data-method="delete" href =/books/<%= book.id %> data-confirm="Seguro?" class="waves-effect 	   waves-light btn">Eliminar</a>	
+	<a data-method="delete" href =/books/<%= book.id %> data-confirm="Seguro?" class="waves-effect 	          waves-light btn">Eliminar</a>	
 	</td>
       </tr>
     <% end %>
-  </tbody>
+  </body>
 </table>
 
 <br>
-
-
+ </div>
+  
 <a href="/books/new"class="waves-effect waves-light btn">Nuevo Contacto</a>
 

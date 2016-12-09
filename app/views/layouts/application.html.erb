@@ -23,13 +23,21 @@
    <%end%>
 
   <body>
- 	
-    <div class ="container">
+  
+   <div class ="container">
    <%= yield %>
-  </div>
+   </div>
 
        <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="js/jquery-3.1.1.slim.min"></script>
       <script type="text/javascript" src="/js/materialize.min.js"></script>
+
+ <script>
+     $(document).ready(function(){
+     $('.parallax').parallax();
+      });
+
+</script>
+
   </body>
 </html>
